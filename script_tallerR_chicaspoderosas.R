@@ -45,9 +45,15 @@ gapminder %>%
 
 gapminder %>% 
   filter(year == 2007) %>% 
-  group_by(continente) %>% 
-  summarise(mean(lifeExp)) 
+  group_by(continent) %>% 
+  summarise(mean(lifeExp)) %>% 
+  write_csv("expectativa_vida.csv")
 
+# cargar el archivo
+
+exp_vida <- read_csv("expectativa_vida.csv")
+
+#
   
 
 
