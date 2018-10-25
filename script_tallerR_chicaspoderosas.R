@@ -3,3 +3,9 @@
 # Riva Quiroga | RLadies Santiago | @rivaquiroga | riva@rladies.org
 
 ### SCRIPT TALLER ###
+
+#install.packages("tidyverse")
+
+# cargar los paquetes
+library(tidyverse)
+library(gapminder)
