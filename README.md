@@ -1,5 +1,6 @@
 # Taller de Introducción a R | RLadies Santiago
-Taller de introducción a R realizado en el marco de "Chicas poderosas: nuevas voces, nuevos medios". [Detalles del evento](https://www.meetup.com/es/Chicas-Poderosas-Chile/events/255678121/)
+Taller de introducción a R realizado en el marco de "Chicas poderosas: nuevas voces, nuevos medios". [Detalles del evento](https://www.meetup.com/es/Chicas-Poderosas-Chile/events/255678121/).
+
 El enlace corto a este repositorio es [bit.ly/tallerR-CHP2018](http://bit.ly/tallerR-CHP2018)
 
 
