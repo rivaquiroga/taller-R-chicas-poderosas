@@ -55,11 +55,25 @@ exp_vida <- read_csv("expectativa_vida.csv")
 
 # un último gráfico
 
-ggplot(gapminder) + aes(gdpPercap, lifeExp) + geom_point(color = "#fca2cf", alpha = 0.3) + scale_x_log10() + geom_smooth(method = "lm", color = "#ffaf0a")
-  
+ggplot(gapminder) + aes(gdpPercap, lifeExp) + geom_point(color = "#fca2cf", alpha = 0.3) + scale_x_log10() + geom_smooth(method = "lm", color = "#ffaf0a") + labs(x = "PIB per cápita", y = "Expectativa d evida", title = "Relación entre expectativa de vida y PIB per cápita", subtitle = "Los puntos en el gráfico representan a los países por año", caption = "Fuente: Gapminder")
 
 
+# Importar CSV desde internet
 
+unibaja <- read_csv("https://raw.githubusercontent.com/rivaquiroga/taller-R-chicas-poderosas/master/mujeres_camara_unibaja.csv")
+
+alta <- read_csv("https://raw.githubusercontent.com/rivaquiroga/taller-R-chicas-poderosas/master/mujeres_camara_alta.csv")
+
+
+unibaja %>% 
+  filter(pais %in% c("Chile", "Bolivia", "Brazil", "Argentina")) %>% 
+  ggplot() + aes(pais, porcentaje_mujeres_unibaja) + geom_col() + expand_limits(y = 100)
+
+mujeres_parlamento <- left_join(unibaja, alta)
+doble_camara <- inner_join(unibaja, alta)
+
+View(mujeres_parlamento)
+View(doble_camara)
 
 
 
