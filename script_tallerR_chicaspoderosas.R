@@ -53,7 +53,9 @@ gapminder %>%
 
 exp_vida <- read_csv("expectativa_vida.csv")
 
-#
+# un último gráfico
+
+ggplot(gapminder) + aes(gdpPercap, lifeExp) + geom_point(color = "#fca2cf", alpha = 0.3) + scale_x_log10() + geom_smooth(method = "lm", color = "#ffaf0a")
   
 
 
