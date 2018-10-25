@@ -14,6 +14,10 @@ View(gapminder) # para mirar la tabla completa
 head(gapminder) # imprimir en la consola las 6 primeras líneas
 tail(gapminder) # imprimir las seis últimas
 str(gapminder) # estructura de los datos
+names(gapminder)
 
+gapminder %>%
+  filter(country %in% c("Argentina", "Chile", "Uruguay", "Perú"))
 
-
+paises <- gapminder %>%
+  filter(country %in% c("Argentina", "Chile", "Uruguay", "Perú"))
