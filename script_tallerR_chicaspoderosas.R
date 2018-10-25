@@ -24,6 +24,35 @@ paises <- gapminder %>%
 
 ggplot(paises) + aes(x = year, y = gdpPercap, color = country) + geom_line()
 
+# filtrar por más de un criterio
+
+gapminder %>% 
+  filter(year == 2007, continent == "Americas")
+
+# reordenar
+
+gapminder %>% 
+  filter(year == 2007, continent == "Americas") %>% 
+  arrange(lifeExp)
+
+# resumir
+
+gapminder %>% 
+  filter(year == 2007) %>% 
+  summarise(mean(lifeExp))
+  
+# agrupar
+
+gapminder %>% 
+  filter(year == 2007) %>% 
+  group_by(continente) %>% 
+  summarise(mean(lifeExp)) 
+
+  
+
+
+
+
 
 
 
