@@ -1,5 +1,7 @@
 # Taller de Introducción a R | RLadies Santiago
 Taller de introducción a R realizado en el marco de "Chicas poderosas: nuevas voces, nuevos medios". [Detalles del evento](https://www.meetup.com/es/Chicas-Poderosas-Chile/events/255678121/)
+El enlace corto a este repositorio es [bit.ly/tallerR-CHP2018](http://bit.ly/tallerR-CHP2018)
+
 
 ![flyer taller](https://github.com/rivaquiroga/taller-R-chicas-poderosas/blob/master/RLadies_ChicasPoderosas.png)
 
@@ -25,5 +27,10 @@ Please read R for Mac OS X FAQ (see Help) section 9 and adjust your system prefe
 
 ## Cosas prácticas para el resto del taller
 
-En este repositorio hay un archivo llamado `script_tallerR_chicaspoderosas.R`. En ese archivo irá apareciendo el código que yo escriba a lo largo del taller. Si en algún momento se pierden, pueden hacer clic sobre ese archivo. Si ya lo tienen abierto, pueden actualizar la página para ver los últimos cambios.
+En este repositorio hay un archivo llamado `script_tallerR_chicaspoderosas.R`. En ese archivo irá apareciendo el código que yo escriba a lo largo del taller. Si en algún momento se pierden, pueden hacer clic sobre ese archivo. Si ya lo tienen abierto, actualicen la página para ver los últimos cambios (Cmd + R).
 
+## Los datos
+En la segunda parte utilizaremos datos de la Unión Inter-Parlamentaria (IPU) sobre participación de mujeres en el parlamento. Los datos fueron extraídos de [data.ipu.org](https://data.ipu.org/).
+
+
+## Recursos para seguir aprendiendo más sobre R
