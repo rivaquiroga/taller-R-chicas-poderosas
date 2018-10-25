@@ -26,6 +26,8 @@ Please read R for Mac OS X FAQ (see Help) section 9 and adjust your system prefe
 
 ¿Cómo resolver esto? Preguntémosle a Google (o a su buscador favorito).
 
+La solución es: `defaults write org.R-project.R force.LANG en_US.UTF-8`
+
 ## Cosas prácticas para el resto del taller
 
 En este repositorio hay un archivo llamado `script_tallerR_chicaspoderosas.R`. En ese archivo irá apareciendo el código que yo escriba a lo largo del taller. Si en algún momento se pierden, pueden hacer clic sobre ese archivo. Si ya lo tienen abierto, actualicen la página para ver los últimos cambios (Cmd + R).
