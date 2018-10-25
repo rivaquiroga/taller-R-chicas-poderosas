@@ -17,7 +17,13 @@ str(gapminder) # estructura de los datos
 names(gapminder)
 
 gapminder %>%
-  filter(country %in% c("Argentina", "Chile", "Uruguay", "Perú"))
+  filter(country %in% c("Argentina", "Chile", "Uruguay", "Peru"))
 
 paises <- gapminder %>%
-  filter(country %in% c("Argentina", "Chile", "Uruguay", "Perú"))
+  filter(country %in% c("Argentina", "Chile", "Uruguay", "Peru"))
+
+ggplot(paises) + aes(x = year, y = gdpPercap, color = country) + geom_line()
+
+
+
+
